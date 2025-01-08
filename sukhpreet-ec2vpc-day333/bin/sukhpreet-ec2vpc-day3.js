@@ -1,0 +1,12 @@
+#!/usr/bin/env node
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+require("source-map-support/register");
+const cdk = require("aws-cdk-lib");
+const sukhpreet_ec2vpc_day3_stack_1 = require("../lib/sukhpreet-ec2vpc-day3-stack");
+const app = new cdk.App();
+new sukhpreet_ec2vpc_day3_stack_1.SukhpreetEc2VpcDay3Stack(app, 'SukhpreetEc2VpcDay3Stack', {
+    env: { account: '992382386705', region: 'us-east-1' },
+    /* For more information, see https://docs.aws.amazon.com/cdk/latest/guide/environments.html */
+});
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoic3VraHByZWV0LWVjMnZwYy1kYXkzLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsic3VraHByZWV0LWVjMnZwYy1kYXkzLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7OztBQUNBLHVDQUFxQztBQUNyQyxtQ0FBbUM7QUFDbkMsb0ZBQThFO0FBRzlFLE1BQU0sR0FBRyxHQUFHLElBQUksR0FBRyxDQUFDLEdBQUcsRUFBRSxDQUFDO0FBQzFCLElBQUksc0RBQXdCLENBQUMsR0FBRyxFQUFFLDBCQUEwQixFQUFFO0lBRTNELEdBQUcsRUFBRSxFQUFFLE9BQU8sRUFBRSxjQUFjLEVBQUUsTUFBTSxFQUFFLFdBQVcsRUFBRTtJQUV0RCw4RkFBOEY7Q0FDL0YsQ0FBQyxDQUFDIiwic291cmNlc0NvbnRlbnQiOlsiIyEvdXNyL2Jpbi9lbnYgbm9kZVxuaW1wb3J0ICdzb3VyY2UtbWFwLXN1cHBvcnQvcmVnaXN0ZXInO1xuaW1wb3J0ICogYXMgY2RrIGZyb20gJ2F3cy1jZGstbGliJztcbmltcG9ydCB7IFN1a2hwcmVldEVjMlZwY0RheTNTdGFjayB9IGZyb20gJy4uL2xpYi9zdWtocHJlZXQtZWMydnBjLWRheTMtc3RhY2snO1xuXG5cbmNvbnN0IGFwcCA9IG5ldyBjZGsuQXBwKCk7XG5uZXcgU3VraHByZWV0RWMyVnBjRGF5M1N0YWNrKGFwcCwgJ1N1a2hwcmVldEVjMlZwY0RheTNTdGFjaycsIHtcbiBcbiAgIGVudjogeyBhY2NvdW50OiAnOTkyMzgyMzg2NzA1JywgcmVnaW9uOiAndXMtZWFzdC0xJyB9LFxuXG4gIC8qIEZvciBtb3JlIGluZm9ybWF0aW9uLCBzZWUgaHR0cHM6Ly9kb2NzLmF3cy5hbWF6b24uY29tL2Nkay9sYXRlc3QvZ3VpZGUvZW52aXJvbm1lbnRzLmh0bWwgKi9cbn0pOyJdfQ==
