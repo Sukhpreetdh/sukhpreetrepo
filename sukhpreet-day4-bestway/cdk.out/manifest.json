@@ -1,0 +1,209 @@
+{
+  "version": "36.0.0",
+  "artifacts": {
+    "SukhpreetDay4BestwayStack.assets": {
+      "type": "cdk:asset-manifest",
+      "properties": {
+        "file": "SukhpreetDay4BestwayStack.assets.json",
+        "requiresBootstrapStackVersion": 6,
+        "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version"
+      }
+    },
+    "SukhpreetDay4BestwayStack": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://unknown-account/unknown-region",
+      "properties": {
+        "templateFile": "SukhpreetDay4BestwayStack.template.json",
+        "terminationProtection": false,
+        "validateOnSynth": false,
+        "assumeRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-deploy-role-${AWS::AccountId}-${AWS::Region}",
+        "cloudFormationExecutionRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-cfn-exec-role-${AWS::AccountId}-${AWS::Region}",
+        "stackTemplateAssetObjectUrl": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/4347c660df6e31db6ceac38c15176d003e9275c4cbf5705d6a0ab39a5c725c26.json",
+        "requiresBootstrapStackVersion": 6,
+        "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version",
+        "additionalDependencies": [
+          "SukhpreetDay4BestwayStack.assets"
+        ],
+        "lookupRole": {
+          "arn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-lookup-role-${AWS::AccountId}-${AWS::Region}",
+          "requiresBootstrapStackVersion": 8,
+          "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version"
+        }
+      },
+      "dependencies": [
+        "SukhpreetDay4BestwayStack.assets"
+      ],
+      "metadata": {
+        "/SukhpreetDay4BestwayStack/sukhpreet-day4-bestway-bucket1/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "sukhpreetday4bestwaybucket1A4B35DC9"
+          }
+        ],
+        "/SukhpreetDay4BestwayStack/sukhpreet-day4-bestway-bucket1/Policy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "sukhpreetday4bestwaybucket1PolicyA4A2EF1C"
+          }
+        ],
+        "/SukhpreetDay4BestwayStack/sukhpreet-day4-bestway-bucket1/AutoDeleteObjectsCustomResource/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "sukhpreetday4bestwaybucket1AutoDeleteObjectsCustomResource2C5F2559"
+          }
+        ],
+        "/SukhpreetDay4BestwayStack/LatestNodeRuntimeMap": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "LatestNodeRuntimeMap"
+          }
+        ],
+        "/SukhpreetDay4BestwayStack/Custom::S3AutoDeleteObjectsCustomResourceProvider/Role": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CustomS3AutoDeleteObjectsCustomResourceProviderRole3B1BD092"
+          }
+        ],
+        "/SukhpreetDay4BestwayStack/Custom::S3AutoDeleteObjectsCustomResourceProvider/Handler": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CustomS3AutoDeleteObjectsCustomResourceProviderHandler9D90184F"
+          }
+        ],
+        "/SukhpreetDay4BestwayStack/sukhpreet-day4-bestway-bucket2/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "sukhpreetday4bestwaybucket22166B3E9"
+          }
+        ],
+        "/SukhpreetDay4BestwayStack/sukhpreet-day4-bestway-bucket2/Policy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "sukhpreetday4bestwaybucket2Policy7C36337A"
+          }
+        ],
+        "/SukhpreetDay4BestwayStack/sukhpreet-day4-bestway-bucket2/AutoDeleteObjectsCustomResource/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "sukhpreetday4bestwaybucket2AutoDeleteObjectsCustomResource908F8B6A"
+          }
+        ],
+        "/SukhpreetDay4BestwayStack/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata"
+          }
+        ],
+        "/SukhpreetDay4BestwayStack/CDKMetadata/Condition": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadataAvailable"
+          }
+        ],
+        "/SukhpreetDay4BestwayStack/BootstrapVersion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BootstrapVersion"
+          }
+        ],
+        "/SukhpreetDay4BestwayStack/CheckBootstrapVersion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CheckBootstrapVersion"
+          }
+        ]
+      },
+      "displayName": "SukhpreetDay4BestwayStack"
+    },
+    "SukhpreetDay4ec2all.assets": {
+      "type": "cdk:asset-manifest",
+      "properties": {
+        "file": "SukhpreetDay4ec2all.assets.json",
+        "requiresBootstrapStackVersion": 6,
+        "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version"
+      }
+    },
+    "SukhpreetDay4ec2all": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://992382386705/us-east-1",
+      "properties": {
+        "templateFile": "SukhpreetDay4ec2all.template.json",
+        "terminationProtection": false,
+        "validateOnSynth": false,
+        "assumeRoleArn": "arn:${AWS::Partition}:iam::992382386705:role/cdk-hnb659fds-deploy-role-992382386705-us-east-1",
+        "cloudFormationExecutionRoleArn": "arn:${AWS::Partition}:iam::992382386705:role/cdk-hnb659fds-cfn-exec-role-992382386705-us-east-1",
+        "stackTemplateAssetObjectUrl": "s3://cdk-hnb659fds-assets-992382386705-us-east-1/272575fa8c30fd9f62a16c2b9fe93b2e9819419eba5962cbeb3ba82c653f2250.json",
+        "requiresBootstrapStackVersion": 6,
+        "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version",
+        "additionalDependencies": [
+          "SukhpreetDay4ec2all.assets"
+        ],
+        "lookupRole": {
+          "arn": "arn:${AWS::Partition}:iam::992382386705:role/cdk-hnb659fds-lookup-role-992382386705-us-east-1",
+          "requiresBootstrapStackVersion": 8,
+          "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version"
+        }
+      },
+      "dependencies": [
+        "SukhpreetDay4ec2all.assets"
+      ],
+      "metadata": {
+        "/SukhpreetDay4ec2all/sukhpreetSecurityGroup/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "sukhpreetSecurityGroup172F4767"
+          }
+        ],
+        "/SukhpreetDay4ec2all/sukhpreetvm1/InstanceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "sukhpreetvm1InstanceRoleBD3C7459"
+          }
+        ],
+        "/SukhpreetDay4ec2all/sukhpreetvm1/InstanceProfile": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "sukhpreetvm1InstanceProfile46281B01"
+          }
+        ],
+        "/SukhpreetDay4ec2all/sukhpreetvm1/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "sukhpreetvm118031B04"
+          }
+        ],
+        "/SukhpreetDay4ec2all/SsmParameterValue:--aws--service--ami-amazon-linux-latest--amzn-ami-hvm-x86_64-gp2:C96584B6-F00A-464E-AD19-53AFF4B05118.Parameter": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SsmParameterValueawsserviceamiamazonlinuxlatestamznamihvmx8664gp2C96584B6F00A464EAD1953AFF4B05118Parameter"
+          }
+        ],
+        "/SukhpreetDay4ec2all/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata"
+          }
+        ],
+        "/SukhpreetDay4ec2all/BootstrapVersion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BootstrapVersion"
+          }
+        ],
+        "/SukhpreetDay4ec2all/CheckBootstrapVersion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CheckBootstrapVersion"
+          }
+        ]
+      },
+      "displayName": "SukhpreetDay4ec2all"
+    },
+    "Tree": {
+      "type": "cdk:tree",
+      "properties": {
+        "file": "tree.json"
+      }
+    }
+  }
+}

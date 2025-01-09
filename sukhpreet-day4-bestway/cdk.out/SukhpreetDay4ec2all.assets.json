@@ -1,0 +1,20 @@
+{
+  "version": "36.0.0",
+  "files": {
+    "272575fa8c30fd9f62a16c2b9fe93b2e9819419eba5962cbeb3ba82c653f2250": {
+      "source": {
+        "path": "SukhpreetDay4ec2all.template.json",
+        "packaging": "file"
+      },
+      "destinations": {
+        "992382386705-us-east-1": {
+          "bucketName": "cdk-hnb659fds-assets-992382386705-us-east-1",
+          "objectKey": "272575fa8c30fd9f62a16c2b9fe93b2e9819419eba5962cbeb3ba82c653f2250.json",
+          "region": "us-east-1",
+          "assumeRoleArn": "arn:${AWS::Partition}:iam::992382386705:role/cdk-hnb659fds-file-publishing-role-992382386705-us-east-1"
+        }
+      }
+    }
+  },
+  "dockerImages": {}
+}
