@@ -5,7 +5,7 @@ on:
       - main  # when ever any code to pushed to master branch it will trigger
     
 jobs:  # we are creating jobs to perform steps
-  deploy:
+  ec2-deploy:
     runs-on: ubuntu-latest # from azure pool 
     
     steps: # steps to setup cdk and run code 
@@ -30,6 +30,47 @@ jobs:  # we are creating jobs to perform steps
       run: |
         cd sukhpreet-ec2vpc-day333
         cdk synth 
+        - name: deploy cdk in aws account 
+      env:
+        AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+        AWS_REGION: ${{ secrets.AWS_REGION }}
+      run: |
+        cd sukhpreet-day4-bestway/
+        cdk deploy SukhpreetDay4ec2all --require-approval never
+  s3-deploy:
+    runs-on: ubuntu-latest # from azure pool 
+
+    steps: # steps to setup cdk and run code 
+    - name: setup node.js 20 version
+      uses: actions/setup-node@v3
+      with:
+        node-version: '20'
+
+    - name: checkout git repo code to vm 
+      uses: actions/checkout@v2 
+
+    - name: verify code in vm 
+      run: ls 
+
+    - name: install dependecies
+      run: | 
+        cd sukhpreet-day4-bestway/
+        npm install 
+        npm install -g aws-cdk 
+
+    - name: complie code 
+      run: |
+        cd sukhpreet-day4-bestway/
+        cdk synth 
+    - name: deploy cdk in aws account 
+      env:
+        AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+        AWS_REGION: ${{ secrets.AWS_REGION }}
+      run: |
+        cd sukhpreet-day4-bestway/
+        cdk deploy SukhpreetDay4BestwayStack --require-approval never 
   
    
 
