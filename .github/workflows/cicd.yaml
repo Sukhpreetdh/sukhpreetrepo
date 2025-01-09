@@ -23,13 +23,13 @@ jobs:  # we are creating jobs to perform steps
 
     - name: install dependecies
       run: | 
-        cd sukhpreet-ec2vpc-day333
+        cd sukhpreet-day4-bestway
         npm install 
         npm install -g aws-cdk 
         
     - name: complie code 
       run: |
-        cd sukhpreet-ec2vpc-day333
+        cd sukhpreet-day4-bestway
         cdk synth 
         
     - name: deploy cdk in aws account 
